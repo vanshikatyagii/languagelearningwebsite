@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: url("blue.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+}
+.super{
+    display: flex;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    background: rgba(14, 14, 156, 0.2);
+    padding: 6px 14px;
+    transition: .5s;
+}
+
+.sidebar.active{
+    width: 240px;
+}
+.sidebar .logo-menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    
+}
+.sidebar .logo-menu .logo{
+    font-size: 25px;
+    color: black;
+    pointer-events: none;
+    opacity: 1;
+    transition: .3s;
+}
+.sidebar.active .logo-menu .logo{
+    opacity: 1;
+    transition-delay: .3s;
+    
+}
+.sidebar .logo-menu .toggle-btn{
+    position: absolute;
+    left: 200px;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .5s;
+}
+.sidebar.active .logo-menu {
+    left: 157px;
+
+}
+.sidebar .list{
+    margin-top: 10px;
+}
+.list .list-item{
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    line-height: 50px;
+}
+.list .list-item a{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: .5s;
+    
+}
+.list .list-item.active a,
+.list .list-item a:hover{
+    background: rgba(255,255,255, .2);
+}
+.list .list-item a i{
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.list .list-items{
+    margin-top: 90px;
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    line-height: 50px;
+}
+.list .list-items a{
+    margin-top: 280px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: .5s;
+    
+}
+.list .list-items.active a,
+.list .list-items a:hover{
+    background: rgba(255,255,255, .2);
+}
+.list .list-items a i{
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.sidebar .link-name{
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity .3s;
+}
+.sidebar.active .link-name{
+    opacity: 1;
+    pointer-events: auto;
+    transition-delay: calc(.1s * var(--i));
+}
+
+.info{
+    overflow: hidden;
+    justify-content: center;
+    padding-left: 200px;
+}
+.heading h1{
+    color: black;
+    font-size: 40px;
+    padding-left: 100px;
+    margin-top: 35px;
+    font-weight: 450;   
+}
+.info .heading h1:hover{
+    width: 270;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: 0px auto;
+    
+}
+.content{
+    flex: 1;
+    width: 400px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+.content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color:black;
+    font-weight: 450;
+    justify-content: flex;
+    align-items: flex;
+}
+.content p{
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color:black;
+    justify-content: center;
+    align-items: center;
+}
+.info2{
+    flex: 1;
+    margin: 100px;
+    animation: fadeInUp 2s ease;
+    margin-top: 10px;
+    
+}
+.info2 h2{
+    font-size: 38px;
+    margin-bottom: 10px;
+    color:black;
+    font-weight: 450;
+    justify-content: flex;
+    align-items: center;
+}
+.info2 p{
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color:black;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    flex:1;
+    width: 600px;
+    margin: auto;
+    animation:fadeInRight 2s ease;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

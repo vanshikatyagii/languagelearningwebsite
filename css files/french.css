@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    padding: 0;
+    color: black;
+  }
+body{
+    background-image:url("blue.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.heading{
+    padding-top: 110px;
+    text-align: center;
+    color: #000;
+    font-size: 350%;
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.button {
+    width: 310px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
+    margin: 50px; /* Adjust margin as needed */
+    padding: 0; /* Adjust padding as needed */
+    border: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+   border-radius: 10px;
+}
+.button:hover{
+    transform: scale(1.2); /* Increases the size of the button on hover */
+  }

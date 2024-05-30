@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    
+  }
+body{
+    background-image:url("blue.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   overflow-x: hidden;
+}
+.heading{
+    padding-top: 0px;
+    text-align: center;
+    color: #000;
+    font-size: 200%;
+    top: 0;
+}
+.nav {
+    justify-content: right; 
+    padding-right: 20px;
+    padding-left:0; 
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+}
+.nav-logo{
+    height:85px;
+    width:85px;
+    font-size: medium;
+    font-weight: 200;
+    align-items: right;
+    margin-right: 700px;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+    align-items: left;
+   
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 2px;
+    margin: 0 25px;
+    align-items: left;
+    margin-right: 20px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid rgb(62, 59, 59);
+   
+}
+.nav-button{
+    align-items: center;
+    margin-right: 30px;
+}
+.nav-button .btn{
+    align-items: right;
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.button-container h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+.button{
+    width: 160px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    margin: 50px; /* Adjust margin as needed */
+    padding: 0; /* Adjust padding as needed */
+    border: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+  transform: scale(1.2); /* Increases the size of the button on hover */
+}
